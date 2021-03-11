@@ -5,5 +5,16 @@ services:
 
 before_install:
  - docker build -t ragpark/docker-react -f Dockerfile.dev .
-sscript:
+script:
  - docker run -e CI=true ragpark/docker-react npm run test
+deploy:
+ provider: elasticbeanstalk
+ region: "us-east-2"
+ app: "docker-react"
+ env: "Dockerreact-env"
+ buket_name: "elasticbeanstalk-us-east-2-533483506083"
+ on:
+  branch: master
+access_key_id: $aws_access_key
+secret_access_key:
+ secure: "$aws_secret_key"
