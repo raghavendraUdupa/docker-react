@@ -42,3 +42,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.dadacoalition.yedit 4 0 2021-03-18 14:02:17.526
 !MESSAGE Marking errors not supported for files outside of a project.
+
+!ENTRY org.eclipse.ui 2 2 2021-03-18 14:17:04.763
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
